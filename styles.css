@@ -1,8 +1,119 @@
+:root {
+    /* https://coolors.co/adbca5-e8b9ab-e09891-cb769e-8c5f66-230007 */
+    --laurel-green: hsla(99, 12%, 74%, 1);
+    --melon: hsla(14, 26%, 91%, 1);
+    --pastel-pink: hsla(5, 35%, 88%, 1);
+    --wild-orchid: hsla(332, 42%, 80%, 1);
+    --mauve-taupe: hsla(351, 32%, 55%, 1);
+    --dark-sienna: hsla(348, 100%, 14%, 1);
+}
+
 blockquote {
     line-height: 2rem;
 }
 
 body {
-    margin: 0 auto;
-    width: 50%;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: auto;
+    grid-template-areas:
+      ". header ."
+      ". main ."
+      ". footer .";
+    font-family: "Noto Sans", "Noto Sans CJK KR", sans-serif;
+}
+
+header {
+    grid-area: header;
+    margin-top: 1rem;
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+}
+
+/* CLASSES */
+
+.diagram {
+    width: 100%;
+  }
+
+  /* MEDIA QUERIES */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    body {
+      grid-template-columns: 3% 94% 3%;
+    }
+  
+    nav {
+      font-size: 0.9rem;
+    }
+  
+    #logo {
+      width: 20px;
+    }
+}
+  
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    body {
+      grid-template-columns: 5% 90% 5%;
+    }
+  
+    nav {
+      font-size: 1rem;
+    }
+  
+    #logo {
+      width: 24px;
+    }
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    body {
+      grid-template-columns: 12.5% 75% 12.5%;
+    }
+  
+    nav {
+      font-size: 1.1rem;
+    }
+  
+    #logo {
+      width: 28px;
+    }
+}
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    body {
+      grid-template-columns: 20% 60% 20%;
+    }
+  
+    nav {
+      font-size: 1.2rem;
+    }
+
+    #logo {
+      width: 28px;
+    }
+}
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    body {
+      grid-template-columns: 25% 50% 25%;
+    }
+  
+    nav {
+      font-size: 1.3rem;
+    }
 }
