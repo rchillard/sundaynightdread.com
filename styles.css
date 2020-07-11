@@ -51,10 +51,22 @@ td {
 	width: 90%;
 }
 
+.distress {
+	color: red;
+	font-weight: bold;
+}
+
 .grid-fifty-fifty {
 	display: grid;
 	grid-gap: 1rem;
-	grid-template-columns: 50% 50%;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+}
+
+.grid-one-thirds {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: 1fr 1fr 1fr;
 	grid-template-rows: auto;
 }
 
