@@ -1,11 +1,12 @@
 :root {
 	/* https://coolors.co/adbca5-e8b9ab-e09891-cb769e-8c5f66-230007 */
-	--laurel-green: hsla(99, 12%, 74%, 1);
-	--melon: hsla(14, 26%, 91%, 1);
-	--pastel-pink: hsla(5, 35%, 88%, 1);
-	--wild-orchid: hsla(332, 42%, 80%, 1);
-	--mauve-taupe: hsla(351, 32%, 55%, 1);
-	--dark-sienna: hsla(348, 100%, 14%, 1);
+	--laurel-green: #bac5b5;
+	--melon: #eee5e2;
+	--pastel-pink: #ebd7d6;
+	--wild-orchid: #e1b7cb;
+	--mauve-taupe: #b16873;
+	--dark-sienna: #47000e;
+	--dread-gray: #3f3d56;
 }
 
 blockquote {
@@ -38,7 +39,7 @@ footer {
 
 table,
 tr,
-td {
+td { 
 	text-align: center;
 	border-collapse: collapse;
 	border: 1px solid black;
@@ -51,11 +52,17 @@ th {
 /* CLASSES */
 
 .diagram {
+	height: auto;
 	width: 90%;
 }
 
+.depiction {
+	height: auto;
+	width: 50%; 
+}
+
 .distress {
-	color: red;
+	color: var(--mauve-taupe);
 	font-weight: bold;
 }
 
