@@ -63,6 +63,7 @@ th {
 
 .distress {
 	color: var(--mauve-taupe);
+	font-size: 1.5rem;
 	font-weight: bold;
 }
 
