@@ -9,6 +9,9 @@
 	--dread-gray: #3f3d56;
 }
 
+a {
+	color: var(--mauve-taupe);
+}
 blockquote {
 	line-height: 2rem;
 }
