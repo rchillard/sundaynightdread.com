@@ -24,6 +24,12 @@ body {
 	font-family: "Noto Sans", "Noto Sans CJK KR", sans-serif;
 }
 
+details {
+	background-color: var(--melon);
+	border-radius: .5rem;
+	padding: .5rem;
+}
+
 header {
 	grid-area: header;
 	margin-top: 1rem;
