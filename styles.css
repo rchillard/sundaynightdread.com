@@ -46,6 +46,10 @@ footer {
 	text-align: center;
 }
 
+select {
+	border-color: var(--mauve-taupe);
+}
+
 table,
 tr,
 td { 
@@ -115,6 +119,10 @@ th {
 
 	nav {
 		font-size: 1rem;
+	}
+
+	th {
+		padding: .1rem;
 	}
 
 	#logo {
