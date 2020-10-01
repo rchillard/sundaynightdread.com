@@ -10,7 +10,7 @@
 }
 
 a {
-	color: var(--mauve-taupe);
+	color: var(--dark-sienna);
 }
 blockquote {
 	line-height: 2rem;
@@ -48,7 +48,7 @@ footer {
 }
 
 select {
-	background: url(http://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png) no-repeat right var(--melon);
+	background: url(assets/br_down.webp) no-repeat right var(--melon);
 	background-position-x: 6.5rem;
 	border: 0;
 	border-color: var(--mauve-taupe);
