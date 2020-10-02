@@ -75,6 +75,12 @@ th {
 }
 /* CLASSES */
 
+.calculator {
+	display: inline;
+	position: relative; 
+	top: -.5rem;
+}
+
 .diagram {
 	height: auto;
 	width: 90%;
