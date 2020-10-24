@@ -1,0 +1,16 @@
+{
+  "name": "sundaynightdread",
+  "version": "1.0.0",
+  "description": "Sunday Night Dread's Twilio functions to support the war against procrastination",
+  "scripts": {
+    "test": "echo \"No tests yet...\""
+  },
+  "keywords": [
+    "twilio",
+    "serverless"
+  ],
+  "dependencies": {
+    "@twilio-labs/serverless-twilio-runtime": "^1.0.0"
+  },
+  "devDependencies": {}
+}
