@@ -7,11 +7,11 @@ exports.handler = function (context, event, callback) {
   // Pass in From, To, and Body as query parameters
   // Example: https://x.x.x.x/<path>?From=%2b15095550100&To=%2b15105550100&Body=Hello%20World
   // Note URL encoding above
-  let from = event.From || context.PHONE_FROM;
+  let from = context.PHONE_TWILIO;
   // If passing in To, make sure to validate, to avoid sending SMS to unexpected locations
   // Need to add validation of TO phone number here
-  let to = event.To || context.PHONE_TO;
-  let body = event.Body || context.MSG_OPTIN;
+  let to = event.To || context.PHONE_TEST;
+  let body = context.MSG_OPTIN;
 
   twilioClient.messages
     .create({

@@ -24,9 +24,12 @@ provider:
   # Environment variables passed to your functions
   # available via process.env
   environmentVars:
-    MSG_OPTIN: 'Ready to conquer your Sunday Night Dread?  Respond with "YES" to get inspired by Arnold!'
-    PHONE_FROM: ${file(serverless.env.yml):phoneFrom}
-    PHONE_TO: ${file(serverless.env.yml):phoneTo}
+    MSG_OPTIN: 'Ready to beat procrastination?  Respond with "YES" to get inspired by Arnold!'
+    MSG_CONFIRM: 'Spinning up our Ultimate Motivator: T-800, Model-101. Call incoming...'
+    MSG_REJECT: 'Not interested?  We understand.'
+    MSG_REMINDER: 'When you are ready, visit sundaynightdread.com'
+    PHONE_TWILIO: ${file(serverless.env.yml):phoneTwilio}
+    PHONE_TEST: ${file(serverless.env.yml):phoneTest}
     MP3_URL: ${file(serverless.env.yml):mp3URL}
 
 # Twilio runtime has to be added a plugin
