@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Set of tools to fight procrastination with knowledge">
+    <title>Sunday Night Dread | Ultimate Motivator</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Ultimate Motivator</h1>
+        <p>Receive a call from the Ultimate Motivator: T-800, Model-101.</p>
+    </header>
+    <main>
+        <div>
+            <form formaction="https://sundaynightdread-2001-dev.twil.io/register/newuser">
+                <label>
+                    Your phone number: <input id="user-telephone" oninput="validatePhone()" maxlength="10" type="tel">
+                </label>
+                <input id="call-submit" type="submit" value="Call Me" disabled>
+            </form>
+            <br/>
+            <img alt="Arnold Schwarzenegger as the Terminator" src="assets/arnold-terminator-as-motivator.jpg" style="margin: 0 auto;">
+        </div>
+    </main>
+    <footer class="grid-fifty-fifty">
+        <span><a href="the-perfect-schedule-1.html">Read My Story</a></span>
+        <span><a href="improvement-calculator.html">Forecast Improvement</a></span>
+    </footer>
+    <script>
+        var telephoneInput = document.querySelector("#user-telephone");
+        var telephoneSubmit = document.querySelector("#call-submit");
+
+        function validatePhone() {
+            if(telephoneInput.value.length === 10) {
+                telephoneSubmit.removeAttribute("disabled");
+            }
+        }
+    </script>
+</body>
+
+</html>
