@@ -7,76 +7,84 @@
     <meta name="Description" content="Set of tools to fight procrastination with knowledge">
     <title>Sunday Night Dread | Improvement Calculator</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
-    </style>
 </head>
 
 <body>
-    <header>
-        <p>This site is a work in progress. It's the future home of a knowledgebase and toolkit to fight
-            procrastination.</p>
-    </header>
     <main>
         <h1>Improvement Calculator</h1>
         <p>
-            This calculator is here to illustrate the power of continual self improvement and small gains.
+            This calculator illustrates the power of continual improvement and small gains.
         </p>
         <details>
-            <summary>If you got 1% better every day, how much better would you be after 1 year?</summary>
+            <summary>If 1% better every day, how much better would you be after 1 year?</summary>
             <p>
-                Many people will answer that they'd be about 3.5x better, because 1% every day adds up over 365 days to be 365% better (or about 3.5 times
-                 improvement), but most people don't understand how small improvements add up over time.
-                Improvement is not additive.  If you expect to be 3.5x better after a year, then you are assuming a linear rate of progress, but humans are
-                really smart.  As we get better at something, we actually compound the effects of our improvement.  
+                Many people will answer that they'd be about 3.5x better, because 1% every day adds up over 365 days to
+                be 365% better (or about 3.5 times
+                improvement), but most people don't understand how small improvements add up over time.
+                Improvement is not additive. If you expect to be 3.5x better after a year, then you are assuming a
+                linear rate of progress, but humans are
+                really smart. As we get better at something, we actually compound the effects of our improvement.
             </p>
             <p>
-                Let's say it's Monday and you decide to become a painter. On Monday, you learn how to mix primary colors, such as red and blue, in order to 
-                form a secondary color like purple.  On Tuesday, you learn brush strokes to draw shapes.  By Wednesday, you've combined these skills and you're 
-                painting flowers.  You're not just making new colors and shapes.  
+                Let's say it's Monday and you decide to become a painter. On Monday, you learn how to mix primary
+                colors, such as red and blue, in order to
+                form a secondary color like purple. On Tuesday, you learn brush strokes to draw shapes. By Wednesday,
+                you've combined these skills and you're
+                painting flowers. You're not just making new colors and shapes.
             </p>
             <p>
                 You've compounded your Tuesday learnings on top of your Monday learnings to create artwork.
             </p>
             <img alt="woman painting on an easel" style="width: 60%" src="assets/undraw_making_art_759c.svg">
             <p>
-                In reality, with this compound effect in play, your improvement is actually exponential. If you get better 1% every day for a year, how much
-                better will you be after 365 days?  <strong>You'll end up thirty-seven times (37x) after a year!</strong>
+                In reality, with this compound effect in play, your improvement is actually exponential. If you get
+                better 1% every day for a year, how much
+                better will you be after 365 days? <strong>You'll end up thirty-seven times (37x) after a year!</strong>
             </p>
             <p>
-                Since progress or improvement is compounding, the formula to calculate your projected improvement over time is derived directly from how
-                we calculate compound interest over time.  When you practice daily, you are essentially accumulating compound interest in a skillset. 
+                Since progress or improvement is compounding, the formula to calculate your projected improvement over
+                time is derived directly from how
+                we calculate compound interest over time. When you practice daily, you are essentially accumulating
+                compound interest in a skillset.
             </p>
         </details>
 
         <h2>Formula</h2>
-        <p>Human improvement compounds over time.  This simple formula expresses the surprising rate of human improvement:</p>
+        <p>Human improvement compounds over time. This simple formula expresses the surprising rate of human
+            improvement:</p>
         <pre>
             Expertise x (1% Better) <sup>Time</sup> = Improvement
         </pre>
         <dl>
-            <dt>Expertise</dt><dd>Current expertise as of the starting point of practice</dd>
-            <dt>Better</dt><dd>Percentage better (amount of improvement) every practice period</dd>
-            <dt>Time</dt><dd>Time expressed in number of practice periods (days)</dd>
-            <dt>Improvement</dt><dd>Final improvement after all practice periods</dd>
+            <dt>Expertise</dt>
+            <dd>Current expertise as of the starting point of practice</dd>
+            <dt>Better</dt>
+            <dd>Percentage better (amount of improvement) every practice period</dd>
+            <dt>Time</dt>
+            <dd>Time expressed in number of practice periods (days)</dd>
+            <dt>Improvement</dt>
+            <dd>Final improvement after all practice periods</dd>
         </dl>
         <p>How many days can you get 1% better?</p>
         <pre>
             Expertise x (1% Better) <form id="progress" oninput="calculateProgress()" style="display: inline"><sup class="calculator"><input name="days" type="number" min="0" style="width: 3rem" value="30"> days</sup> = <samp><output name="improvement" for="days">134</output>%</samp></form> Improvement
         </pre>
-        <p>For additional reading, check out: <a href="https://jamesclear.com/continuous-improvement">Continuous Improvement: How It Works and How to Master It</a> by James Clear.</p>
-        <script>
-            function calculateProgress() {
-                var form = document.getElementById("progress");
-                var days = parseInt(form.elements["days"].value);
-                var improvement = form.elements["improvement"];
-                improvement.value = Math.round((1.01**days) * 100);
-            }
-        </script>
+        <p>For more, read: <a href="https://jamesclear.com/continuous-improvement">Continuous
+                Improvement</a> by James Clear.</p>
     </main>
-
-    <footer class="grid-fifty-fifty">
-        <span><a href="the-perfect-schedule-1.html">Read My Story</a></span>
-        <span><a href="improvement-calculator.html">Forecast Improvement</a></span>
+    <footer class="grid-menu">
+        <a href="improvement-calculator.html">Improvement Calculator</a>
+        <a href="ultimate-motivator.html">Ultimate Motivator</a>
+        <span class="title">SND</span>
     </footer>
+    <script>
+        function calculateProgress() {
+            var form = document.getElementById("progress");
+            var days = parseInt(form.elements["days"].value);
+            var improvement = form.elements["improvement"];
+            improvement.value = Math.round((1.01 ** days) * 100);
+        }
+    </script>
 </body>
 
 </html>
