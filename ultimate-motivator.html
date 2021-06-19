@@ -8,9 +8,12 @@
     <title>Sunday Night Dread | Ultimate Motivator</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
     <main>
         <h1>Ultimate Motivator</h1>
+        <p>This feature is still a <strong>Work in Progress</strong>.  Come back when it's ready!</p>
+        <hr>
         <p>Receive a call from the Ultimate Motivator: T-800, Model-101.</p>
         <div>
             <form formaction="https://sundaynightdread-2001-dev.twil.io/register/newuser">
@@ -19,24 +22,25 @@
                 </label>
                 <input id="call-submit" type="submit" value="Call Me" disabled>
             </form>
-            <br/>
-            <img alt="Arnold Schwarzenegger as the Terminator" src="assets/arnold-terminator-as-motivator.jpg" style="margin: 0 auto;">
+            <br />
+            <img alt="Arnold Schwarzenegger as the Terminator" src="assets/arnold-terminator-as-motivator.jpg"
+                style="margin: 0 auto;">
+        </div>
+        <div class="grid-fifty-fifty">
+            <a class="next-page" href="index.html">Home</a>
+            <a class="next-page" href="improvement-calculator.html">Improvement Calculator</a>
         </div>
     </main>
-    <footer class="grid-menu">
-        <a href="improvement-calculator.html">Improvement Calculator</a>
-        <a href="ultimate-motivator.html">Ultimate Motivator</a>
-        <span class="title">SND</span>
-    </footer>
     <script>
         var telephoneInput = document.querySelector("#user-telephone");
         var telephoneSubmit = document.querySelector("#call-submit");
 
         function validatePhone() {
-            if(telephoneInput.value.length === 10) {
+            if (telephoneInput.value.length === 10) {
                 telephoneSubmit.removeAttribute("disabled");
             }
         }
     </script>
 </body>
+
 </html>

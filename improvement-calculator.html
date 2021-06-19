@@ -13,10 +13,10 @@
     <main>
         <h1>Improvement Calculator</h1>
         <p>
-            This calculator illustrates the power of continual improvement and small gains.
+            This calculator illustrates the power of continual improvement over time.
         </p>
         <details>
-            <summary>If 1% better every day, how much better would you be after 1 year?</summary>
+            <summary>If you improved 1% every day at a certain skill, how much better would you be after 1 year?  The answer might surprise you!</summary>
             <p>
                 Many people will answer that they'd be about 3.5x better, because 1% every day adds up over 365 days to
                 be 365% better (or about 3.5 times
@@ -25,6 +25,7 @@
                 linear rate of progress, but humans are
                 really smart. As we get better at something, we actually compound the effects of our improvement.
             </p>
+            <p>This is a lot like compound interest with money.</p>
             <p>
                 Let's say it's Monday and you decide to become a painter. On Monday, you learn how to mix primary
                 colors, such as red and blue, in order to
@@ -39,12 +40,13 @@
             <p>
                 In reality, with this compound effect in play, your improvement is actually exponential. If you get
                 better 1% every day for a year, how much
-                better will you be after 365 days? <strong>You'll end up thirty-seven times (37x) after a year!</strong>
+                better will you be after 365 days? 
             </p>
+            <p>You'll end up <strong>thirty-seven times (37x)</strong> after a year!</p>
             <p>
                 Since progress or improvement is compounding, the formula to calculate your projected improvement over
                 time is derived directly from how
-                we calculate compound interest over time. When you practice daily, you are essentially accumulating
+                we calculate compound interest over time. When you practice daily, you are accumulating
                 compound interest in a skillset.
             </p>
         </details>
@@ -67,16 +69,16 @@
         </dl>
         <p>How many days can you get 1% better?</p>
         <pre>
-            Expertise x (1% Better) <form id="progress" oninput="calculateProgress()" style="display: inline"><sup class="calculator"><input name="days" type="number" min="0" style="width: 3rem" value="30"> days</sup> = <samp><output name="improvement" for="days">134</output>%</samp></form> Improvement
+Expertise x (1% Better) <form id="progress" oninput="calculateProgress()" style="display: inline"><sup class="calculator"><input name="days" type="number" min="0" style="width: 3rem" value="30"> days</sup> = <samp><output name="improvement" for="days">134</output>%</samp></form> Improvement
         </pre>
         <p>For more, read: <a href="https://jamesclear.com/continuous-improvement">Continuous
                 Improvement</a> by James Clear.</p>
+        <div class="grid-fifty-fifty">
+            <a class="next-page" href="index.html">Home</a>
+            <a class="next-page" href="ultimate-motivator.html">Ultimate Motivator</a>
+        </div>
+
     </main>
-    <footer class="grid-menu">
-        <a href="improvement-calculator.html">Improvement Calculator</a>
-        <a href="ultimate-motivator.html">Ultimate Motivator</a>
-        <span class="title">SND</span>
-    </footer>
     <script>
         function calculateProgress() {
             var form = document.getElementById("progress");
