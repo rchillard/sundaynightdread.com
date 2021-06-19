@@ -121,3 +121,16 @@ th {
 	grid-template-columns: 1fr auto 1fr;
 }
 
+.next-page {
+	background: var(--dark-sienna);
+	border: 2px solid var(--mauve-taupe);
+	border-radius: 2px;
+	color: white;
+	display: block;
+	font-size: 1.1em;
+	margin: 0 auto;
+	padding: .5em;
+	text-align: center;
+	text-decoration: none;
+	width: 80%;
+}
