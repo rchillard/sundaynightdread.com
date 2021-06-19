@@ -134,3 +134,9 @@ th {
 	text-decoration: none;
 	width: 80%;
 }
+
+.next-page:hover {
+	background: var(--laurel-green);
+	border: 2px solid var(--melon);
+	color: black;
+}
