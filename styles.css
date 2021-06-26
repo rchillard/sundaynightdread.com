@@ -38,7 +38,12 @@ header {
 	margin-top: 1rem;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	color: var(--dark-sienna);
 }
 
@@ -80,7 +85,7 @@ select {
 
 table,
 tr,
-td { 
+td {
 	text-align: center;
 	border-collapse: collapse;
 	border: 1px solid var(--mauve-taupe);
@@ -94,14 +99,14 @@ th {
 
 .calculator {
 	display: inline;
-	position: relative; 
+	position: relative;
 	top: -.5rem;
 }
 
 .depiction {
 	height: auto;
 	margin: 0 auto;
-	width: 80%; 
+	width: 80%;
 }
 
 .distress {
@@ -139,4 +144,75 @@ th {
 	background: var(--laurel-green);
 	border: 2px solid var(--melon);
 	color: black;
+}
+
+.wrapper {
+	margin: 5vh auto auto auto;
+}
+
+#project {
+	background-color: var(--laurel-green);
+	clip-path: circle(8%);
+	font-size: 1.2rem;
+}
+
+.zone {
+	font-weight: bold;
+	padding: 8%;
+	transition: background-color 1s;
+	text-align: center;
+}
+
+.zone:hover {
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+}
+
+.zone a {
+	color: inherit;
+	/* Hack to make clickable area larger around links */
+	padding: 2rem;
+	text-decoration: none;
+}
+
+.zone:nth-child(1) {
+	background-color: var(--melon);
+	clip-path: polygon(50% 0%, 42% 100%, 58% 100%);
+}
+
+.zone:nth-child(1) span {
+	position: relative;
+	top: 1.5rem;
+}
+
+.zone:nth-child(2) {
+	background-color: var(--pastel-pink);
+	clip-path: polygon(42% 0, 58% 0, 66% 100%, 34% 100%);
+	font-size: 1.2rem;
+}
+
+.zone:nth-child(3) {
+	background-color: var(--wild-orchid);
+	clip-path: polygon(34% 0, 66% 0, 74% 100%, 26% 100%);
+	font-size: 1.2rem;
+}
+
+.zone:nth-child(4) {
+	background-color: var(--mauve-taupe);
+	clip-path: polygon(26% 0, 74% 0, 82% 100%, 18% 100%);
+	font-size: 1.4rem;
+}
+
+.zone:nth-child(5) {
+	background-color: var(--dark-sienna);
+	color: white;
+	clip-path: polygon(18% 0, 82% 0, 90% 100%, 10% 100%);
+	font-size: 1.6rem;
+}
+
+.zone:nth-child(6) {
+	background-color: var(--dread-gray);
+	color: white;
+	clip-path: polygon(10% 0, 90% 0, 98% 100%, 2% 100%);
+	font-size: 2rem;
 }
