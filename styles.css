@@ -33,6 +33,10 @@ details {
 	padding: .5rem;
 }
 
+dt {
+	font-weight: bolder;
+}
+
 header {
 	grid-area: header;
 	margin-top: 1rem;
