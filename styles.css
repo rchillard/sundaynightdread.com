@@ -33,6 +33,10 @@ details {
 	padding: .5rem;
 }
 
+dd {
+	padding-bottom: 1rem;
+}
+
 dt {
 	font-weight: bolder;
 }
