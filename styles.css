@@ -33,6 +33,10 @@ details {
 	padding: .5rem;
 }
 
+details p {
+	padding: .5rem 0;
+}
+
 dd {
 	padding-bottom: 1rem;
 }
@@ -57,6 +61,7 @@ h6 {
 
 img {
 	display: block;
+	padding-top: 1rem;
 }
 
 main {
@@ -65,6 +70,10 @@ main {
 	grid-area: main;
 	margin: .5rem;
 	padding: 1rem;
+}
+
+main > * {
+	margin-top: 1rem;
 }
 
 footer {
@@ -84,6 +93,10 @@ footer ul {
 footer a:hover {
 	-webkit-filter: brightness(200%);
 	filter: brightness(200%);
+}
+
+footer img {
+	padding-top: 0;
 }
 
 .nav-pyramid {
