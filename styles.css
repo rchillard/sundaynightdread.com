@@ -232,3 +232,8 @@ th {
 	clip-path: circle(8%);
 	font-size: 1.2rem;
 }
+
+/* UTILITIES */
+.center {
+	text-align: center;
+}
