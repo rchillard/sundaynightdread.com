@@ -9,6 +9,11 @@
 	--dread-gray: #3f3d56;
 }
 
+html {
+	/* Always display vertical scroll bar, so browser viewport width does not change across pages that do not require vertical scroll */
+	overflow-y: scroll;
+}
+
 a {
 	color: var(--dark-sienna);
 }
